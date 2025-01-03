@@ -55,25 +55,14 @@ button:active{
 #weatherCard{
     display: none;
     color: white;
-    /* background-image: url(card.jpg); */
-    /* background-color: aliceblue; */
-    
-    /* position:fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    /* margin-top: 50px; */
     width: 40%;
-     
-
-    /* padding: 20px; */
     border-radius: 10px;
     margin: 20px auto;
-    /* background-color: rgba(0, 0, 0, 0.9); */
     line-height: 40px;
-    box-shadow: 1px 1px 10px black;
-    
+    box-shadow: 1px 1px 10px black;    
 }
 #cards{
     background-color: rgba(53, 49, 49, 0.5);
@@ -95,13 +84,10 @@ button:active{
 #city{
     font-size: 30px;
     font-weight: bolder;
-    /* color:rgb(6, 85, 114); */
 }
 #cardDisplay{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* justify-content: space-around; */
-    /* text-align: left; */
 }
 #timeDay{
     display: flex;

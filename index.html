@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="weather">
+         <div class="name">Find The Weather</div>
+       
+        <div><input type="text" name="" id="inp" placeholder="Enter your city name">
+            <button onclick="weather()">Check</button>
+        </div>
+
+            <div id="weatherCard">
+                <div id="cards"></div>
+            </div>
+        
+            <div id="error">
+                <h3 id="errors"></h3>
+                <button type="button" onclick="reload()">OK</button>
+
+            </div>
+    </section>
+      <script src="app.js"></script>
+</body>
+</html>

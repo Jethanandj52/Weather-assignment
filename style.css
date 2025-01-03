@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(default.webp);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y:hidden ;
+ 
+      
+}
+.name{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-bottom: 10px;
+ 
+}
+ 
+#weather{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(175, 75, 75, 0.5); */
+    /* position: fixed; */
+    top: 0;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+input{
+    width: 33%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+button{
+    
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    font-weight: bolder;
+}
+button:active{
+    transform: scale(0.8);
+}
+
+#weatherCard{
+    display: none;
+    color: white;
+    /* background-image: url(card.jpg); */
+    /* background-color: aliceblue; */
+    
+    /* position:fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* margin-top: 50px; */
+    width: 40%;
+     
+
+    /* padding: 20px; */
+    border-radius: 10px;
+    margin: 20px auto;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    line-height: 40px;
+    box-shadow: 1px 1px 10px black;
+    
+}
+#cards{
+    background-color: rgba(53, 49, 49, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+#error{
+    background-color: white;
+    width: 35%;
+    padding: 20px;
+    top: 0;
+    position: fixed;
+    margin: 11% 30%;
+    border-radius: 10px;
+    display: none;
+    line-height: 50px;
+}
+
+#city{
+    font-size: 30px;
+    font-weight: bolder;
+    /* color:rgb(6, 85, 114); */
+}
+#cardDisplay{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content: space-around; */
+    /* text-align: left; */
+}
+#timeDay{
+    display: flex;
+    justify-content: space-around;
+}
+#dayNight{
+    font-size: 30px;
+}
+
+@media (max-width: 1024px) {
+    #weatherCard {
+        width: 60%;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 30px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    #weatherCard {
+        width: 80%;
+    }
+
+    #cardDisplay {
+        grid-template-columns: 1fr;
+    }
+
+    #error {
+        width: 80%;
+        margin: 20% 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 24px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    #weatherCard {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #error {
+        width: 90%;
+        margin: 30% 5%;
+    }
+}

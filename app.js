@@ -152,7 +152,7 @@ switch (condition) {
         body.style.backgroundImage = "url('default.gif')";
         break;
 }
-// Add some additional styles to ensure the background covers the full screen
+ 
  
 }
 function reload(){

@@ -97,6 +97,7 @@ switch (condition) {
         break;
 
     case 'rain':
+        city.style.color="white"
         body.style.backgroundImage = "url('rain.gif')";
         break;
 

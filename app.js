@@ -32,7 +32,7 @@ var city = document.getElementById("inp").value;
 var card = document.getElementById("cards");
 let er = document.getElementById("errors");
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=52cad508bde81442eebec1e7b0e5045d&units=metric`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q={city}&appid=52cad508bde81442eebec1e7b0e5045d&units=metric`)
     .then((res) => {
         return res.json();
     })
